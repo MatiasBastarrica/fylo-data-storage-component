@@ -1,0 +1,22 @@
+/* ### CUSTOM PROPERTIES ### */
+
+:root {
+  /* primary */
+  --primary-gradient-1: hsl(6, 100%, 80%);
+  --primary-gradient-2: hsl(335, 100%, 65%);
+
+  /* neutral */
+  --neutral-blue-200: hsl(243, 100%, 93%);
+  --neutral-grayish-blue: hsl(229, 7%, 55%);
+  --neutral-blue-850: hsl(228, 56%, 25%);
+  --neutral-blue-950: hsl(229, 57%, 11%);
+
+  /* typography */
+  --ff-raleway: "Raleway", sans-serif;
+  --fw-400: 400;
+  --fw-700: 700;
+}
+
+body {
+  font-size: 0.875rem;
+}
