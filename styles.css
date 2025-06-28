@@ -74,9 +74,9 @@ main {
 .actions-section {
   background-color: var(--neutral-blue-850);
   padding: 2.5rem 1rem 2.5rem 2.5rem;
-  border-start-start-radius: 0.8rem;
-  border-end-start-radius: 0.8rem;
-  border-end-end-radius: 0.8rem;
+  border-start-start-radius: 0.5rem;
+  border-end-start-radius: 0.5rem;
+  border-end-end-radius: 0.5rem;
   border-start-end-radius: 6rem;
 }
 
@@ -103,7 +103,7 @@ main {
 .storage-section {
   background-color: var(--neutral-blue-850);
   margin-top: 1rem;
-  border-radius: 0.8rem;
+  border-radius: 0.5rem;
   padding: 1.8rem 1.8rem 2.8rem;
 }
 
@@ -118,7 +118,7 @@ main {
   position: relative;
   margin-top: 1.125rem;
   height: 20px;
-  background-color: var(--neutral-blue-950);
+  background-color: hsla(229, 57%, 11%, 0.507);
   border-radius: 200px;
   display: flex;
   align-items: center;
@@ -152,7 +152,7 @@ main {
   color: gray;
   font-weight: var(--fw-700);
   padding: 0.8rem 1rem;
-  border-radius: 0.8rem;
+  border-radius: 0.6rem;
   display: flex;
   gap: 0.5rem;
   text-transform: uppercase;
@@ -166,4 +166,51 @@ main {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+/* ### MEDIA QUERIES ### */
+
+@media (min-width: 23.438em) {
+  body {
+    background-image: url(./images/bg-desktop.png);
+    background-position: bottom;
+  }
+}
+
+@media (min-width: 62.5em) {
+  .card-fylo {
+    max-width: unset;
+    width: unset;
+    display: flex;
+    align-items: flex-end;
+    gap: 1.8rem;
+  }
+
+  .actions-section {
+    width: 362px;
+  }
+
+  .storage-section {
+    width: 560px;
+    padding: 2.6rem;
+  }
+
+  .space-left-bubble {
+    top: unset;
+    left: unset;
+    right: 0;
+    bottom: 90px;
+    position: relative;
+    padding: 0.8rem 1.4rem;
+    flex-shrink: 0;
+  }
+
+  .space-left-bubble::after {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    right: 0;
+    border-top: 40px solid white;
+    border-left: 40px solid transparent;
+  }
 }
