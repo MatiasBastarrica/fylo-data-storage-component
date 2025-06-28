@@ -17,6 +17,20 @@
   --fw-700: 700;
 }
 
+/* ### CSS RESET ### */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
 body {
+  font-family: var(--ff-raleway);
   font-size: 0.875rem;
 }
