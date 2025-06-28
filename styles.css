@@ -38,13 +38,132 @@ img {
 }
 
 .text-big {
-  font-size: 2.5rem;
-  font-weight: var(--fw-700);
+  font-size: 2.2rem;
+  color: black;
 }
+
+/* ### GENERAL STYLING ### */
 
 body {
   font-family: var(--ff-raleway);
   font-size: 0.875rem;
-  color: var(--neutral-grayish-blue);
   font-weight: var(--fw-400);
+  background-color: var(--neutral-blue-950);
+  color: var(--neutral-blue-200);
+  background-image: url(./images/bg-mobile.png);
+  background-repeat: no-repeat;
+}
+
+main {
+  min-height: 100vh;
+  padding: 2rem 1.125rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ### FYLO CARD ### */
+
+.card-fylo {
+  max-width: 322px;
+  width: 95%;
+}
+
+/* ## ACTIONS SECTION ## */
+
+.actions-section {
+  background-color: var(--neutral-blue-850);
+  padding: 2.5rem 1rem 2.5rem 2.5rem;
+  border-start-start-radius: 0.8rem;
+  border-end-start-radius: 0.8rem;
+  border-end-end-radius: 0.8rem;
+  border-start-end-radius: 6rem;
+}
+
+.file-actions-container {
+  margin-top: 2.4rem;
+  display: flex;
+  /* align-items: center; */
+  gap: 1rem;
+}
+
+.icon-container {
+  box-sizing: content-box;
+  width: 24px;
+  padding: 0.8rem;
+  background-color: var(--neutral-blue-950);
+  border-radius: 0.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ### STORAGE SECTION ### */
+
+.storage-section {
+  background-color: var(--neutral-blue-850);
+  margin-top: 1rem;
+  border-radius: 0.8rem;
+  padding: 1.8rem 1.8rem 2.8rem;
+}
+
+.storage-section h2 {
+  font-size: 0.875rem;
+  font-weight: var(--fw-400);
+}
+
+/* # PROGRESS BAR ### */
+
+.progress-bar-container {
+  position: relative;
+  margin-top: 1.125rem;
+  height: 20px;
+  background-color: var(--neutral-blue-950);
+  border-radius: 200px;
+  display: flex;
+  align-items: center;
+}
+
+.progress-bar-gradient {
+  width: 81.5%;
+  height: 16px;
+  border-radius: 200px;
+  background: linear-gradient(
+    to right,
+    var(--primary-gradient-1),
+    var(--primary-gradient-2)
+  );
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-inline-end: 0.175rem;
+}
+
+.progress-bar__circle {
+  background-color: var(--neutral-blue-200);
+  width: 12px;
+  height: 12px;
+  border-radius: 200px;
+}
+
+.space-left-bubble {
+  position: absolute;
+  background-color: white;
+  color: gray;
+  font-weight: var(--fw-700);
+  padding: 0.8rem 1rem;
+  border-radius: 0.8rem;
+  display: flex;
+  gap: 0.5rem;
+  text-transform: uppercase;
+  align-items: center;
+  top: 64px;
+  left: 18%;
+}
+
+.storage-stats {
+  margin-top: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
