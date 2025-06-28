@@ -30,7 +30,21 @@ img {
   display: block;
 }
 
+/* ### UTILITIES ### */
+
+.text-highlight {
+  color: var(--neutral-blue-200);
+  font-weight: var(--fw-700);
+}
+
+.text-big {
+  font-size: 2.5rem;
+  font-weight: var(--fw-700);
+}
+
 body {
   font-family: var(--ff-raleway);
   font-size: 0.875rem;
+  color: var(--neutral-grayish-blue);
+  font-weight: var(--fw-400);
 }
